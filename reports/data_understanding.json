@@ -1,0 +1,182 @@
+{
+  "sheets": {
+    "README": {
+      "rows": 10,
+      "columns": 2,
+      "column_names": [
+        "CPRI State-Level Hackathon \u2013 Screening Round Dataset",
+        "Unnamed: 1"
+      ],
+      "missing_values": {
+        "CPRI State-Level Hackathon \u2013 Screening Round Dataset": 1,
+        "Unnamed: 1": 1
+      },
+      "duplicate_rows": 0
+    },
+    "Training_Data": {
+      "rows": 1000,
+      "columns": 11,
+      "column_names": [
+        "Test_ID",
+        "Applied_Voltage_kV",
+        "Load_Current_A",
+        "Ambient_Temperature_C",
+        "Test_Duration_min",
+        "Sensor_S1",
+        "Sensor_S2",
+        "Sensor_S3",
+        "Sensor_S4",
+        "Reference_Parameter",
+        "Validity_Label"
+      ],
+      "missing_values": {
+        "Test_ID": 0,
+        "Applied_Voltage_kV": 0,
+        "Load_Current_A": 0,
+        "Ambient_Temperature_C": 0,
+        "Test_Duration_min": 0,
+        "Sensor_S1": 6,
+        "Sensor_S2": 2,
+        "Sensor_S3": 7,
+        "Sensor_S4": 29,
+        "Reference_Parameter": 0,
+        "Validity_Label": 0
+      },
+      "duplicate_rows": 0
+    },
+    "Test_Data": {
+      "rows": 350,
+      "columns": 9,
+      "column_names": [
+        "Test_ID",
+        "Applied_Voltage_kV",
+        "Load_Current_A",
+        "Ambient_Temperature_C",
+        "Test_Duration_min",
+        "Sensor_S1",
+        "Sensor_S2",
+        "Sensor_S3",
+        "Sensor_S4"
+      ],
+      "missing_values": {
+        "Test_ID": 0,
+        "Applied_Voltage_kV": 0,
+        "Load_Current_A": 0,
+        "Ambient_Temperature_C": 0,
+        "Test_Duration_min": 0,
+        "Sensor_S1": 1,
+        "Sensor_S2": 3,
+        "Sensor_S3": 2,
+        "Sensor_S4": 11
+      },
+      "duplicate_rows": 0
+    },
+    "Sample_Submission": {
+      "rows": 350,
+      "columns": 3,
+      "column_names": [
+        "Test_ID",
+        "Predicted_Reference_Parameter",
+        "Validity_Label"
+      ],
+      "missing_values": {
+        "Test_ID": 0,
+        "Predicted_Reference_Parameter": 350,
+        "Validity_Label": 350
+      },
+      "duplicate_rows": 0
+    }
+  },
+  "training_numeric_summary": {
+    "Applied_Voltage_kV": {
+      "count": 1000.0,
+      "mean": 20.135588,
+      "std": 7.125442,
+      "min": 8.0142,
+      "25%": 14.011275,
+      "50%": 19.985,
+      "75%": 26.72275,
+      "max": 31.9783
+    },
+    "Load_Current_A": {
+      "count": 1000.0,
+      "mean": 63.272139,
+      "std": 27.886854,
+      "min": 15.0079,
+      "25%": 39.31645,
+      "50%": 63.7113,
+      "75%": 87.649725,
+      "max": 109.9526
+    },
+    "Ambient_Temperature_C": {
+      "count": 1000.0,
+      "mean": 34.180393,
+      "std": 7.51756,
+      "min": 18.0,
+      "25%": 28.8416,
+      "50%": 34.58915,
+      "75%": 39.08165,
+      "max": 55.0
+    },
+    "Test_Duration_min": {
+      "count": 1000.0,
+      "mean": 31.990863,
+      "std": 15.798383,
+      "min": 5.0434,
+      "25%": 18.493,
+      "50%": 31.83625,
+      "75%": 45.3408,
+      "max": 59.9745
+    },
+    "Sensor_S1": {
+      "count": 994.0,
+      "mean": 13.503143,
+      "std": 4.0845,
+      "min": 0.0,
+      "25%": 10.470925,
+      "50%": 13.62775,
+      "75%": 16.508225,
+      "max": 28.5205
+    },
+    "Sensor_S2": {
+      "count": 998.0,
+      "mean": 13.663169,
+      "std": 3.926916,
+      "min": -0.2015,
+      "25%": 10.867375,
+      "50%": 13.57855,
+      "75%": 16.341875,
+      "max": 28.0601
+    },
+    "Sensor_S3": {
+      "count": 993.0,
+      "mean": 16.96714,
+      "std": 5.154167,
+      "min": 0.0,
+      "25%": 12.851,
+      "50%": 16.9269,
+      "75%": 21.3608,
+      "max": 35.7555
+    },
+    "Sensor_S4": {
+      "count": 971.0,
+      "mean": 49.756865,
+      "std": 12.533116,
+      "min": 11.4004,
+      "25%": 41.77755,
+      "50%": 49.4543,
+      "75%": 57.65885,
+      "max": 87.7375
+    },
+    "Reference_Parameter": {
+      "count": 1000.0,
+      "mean": 26.692486,
+      "std": 10.694772,
+      "min": 11.9183,
+      "25%": 18.41555,
+      "50%": 23.01825,
+      "75%": 33.44365,
+      "max": 61.5848
+    }
+  }
+}

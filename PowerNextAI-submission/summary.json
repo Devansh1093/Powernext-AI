@@ -1,0 +1,76 @@
+{
+  "team_name": "PowerNextAI",
+  "dataset": {
+    "path": "Dataset.xlsx",
+    "training_sheet": "Training_Data",
+    "test_sheet": "Test_Data",
+    "training_rows": 1000,
+    "test_rows": 350,
+    "feature_columns": [
+      "Applied_Voltage_kV",
+      "Load_Current_A",
+      "Ambient_Temperature_C",
+      "Test_Duration_min",
+      "Sensor_S1",
+      "Sensor_S2",
+      "Sensor_S3",
+      "Sensor_S4"
+    ],
+    "missing_values_training": {
+      "Test_ID": 0,
+      "Applied_Voltage_kV": 0,
+      "Load_Current_A": 0,
+      "Ambient_Temperature_C": 0,
+      "Test_Duration_min": 0,
+      "Sensor_S1": 6,
+      "Sensor_S2": 2,
+      "Sensor_S3": 7,
+      "Sensor_S4": 29,
+      "Reference_Parameter": 0,
+      "Validity_Label": 0
+    },
+    "duplicate_rows_training": 0
+  },
+  "validation": {
+    "strategy": "5-fold shuffled KFold for regression and 5-fold stratified KFold for classification",
+    "seed": 42,
+    "regression_model": "ExtraTreesRegressor",
+    "regression_mae": 0.9340443222511909,
+    "regression_rmse": 2.3522083018938824,
+    "regression_r2": 0.9515779702189996,
+    "classification_model": "ExtraTreesClassifier",
+    "classification_threshold": 0.35,
+    "classification_accuracy": 0.946,
+    "invalid_precision": 0.7985074626865671,
+    "invalid_recall": 0.7985074626865671,
+    "invalid_f1": 0.7985074626865671,
+    "confusion_matrix_valid_invalid": [
+      [
+        839,
+        27
+      ],
+      [
+        27,
+        107
+      ]
+    ]
+  },
+  "prediction_summary": {
+    "predicted_valid": 323,
+    "predicted_invalid": 27,
+    "reference_min": 13.379798491666664,
+    "reference_max": 54.53631613333336,
+    "reference_mean": 26.266548345845237,
+    "reference_median": 22.729699760416658
+  },
+  "submission_schema": [
+    "Test_ID",
+    "Predicted_Reference_Parameter",
+    "Validity_Label"
+  ],
+  "environment": {
+    "python": "3.13.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "task3_note": "No separate Task 3 specification was present in the workspace; this summary is generated from the verified pipeline outputs and validation results."
+}

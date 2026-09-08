@@ -1,0 +1,4 @@
+task,model,mae,rmse,r2,threshold,accuracy,invalid_precision,invalid_recall,invalid_f1,confusion_matrix_valid_invalid
+regression,ExtraTreesRegressor,0.9340443222511909,2.3522083018938824,0.9515779702189996,,,,,,
+regression,RandomForestRegressor,0.9775399064539205,2.2856103441182345,0.9542810950851204,,,,,,
+classification,ExtraTreesClassifier,,,,0.35,0.946,0.7985074626865671,0.7985074626865671,0.7985074626865671,"[[839, 27], [27, 107]]"
